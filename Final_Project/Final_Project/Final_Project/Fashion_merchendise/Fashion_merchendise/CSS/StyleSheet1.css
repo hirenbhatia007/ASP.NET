@@ -1,0 +1,36 @@
+﻿body {
+}
+h2{
+   
+}
+footer {
+    background-color: aliceblue;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    padding-top:1%;
+    background-color:darkgrey;
+    color: white;
+    text-align: center;
+}
+.logoimg{
+    /*padding-left:20px;*/
+    width:50px;
+}
+main{
+    padding:2%;
+}
+.homeimg{
+    width:20%;
+}
+.cart {
+    width="5%";
+    height="5%";
+    padding-left:20%;
+}
+.navbar-nav1:hover {
+    background-color: darkgray;
+    color: white;
+}

@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Fashion_merchendise.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="CSS/StyleSheet1.css" rel="stylesheet" />
+     
+    </asp:ContentPlaceHolder>
+</head>
+<body class="container">
+     <form id="form1" runat="server">
+     <header>
+         <div class="text-center">
+
+             <h2>
+                 <img src="images/images (1).png" class="logoimg " />Fashion Hub  </h2>
+
+         </div>
+
+         
+         <nav class="navbar navbar-expand-lg navbar-light bg-light " style="padding-bottom:1%; padding-top:1%;">
+           
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+                <ul class="navbar-nav">
+                  <li class="nav-item active navbar-nav1">
+                        <a class="nav-link" href="Home.aspx">Home</a>
+                    </li>
+                     <li class="nav-item active navbar-nav1">
+                        <a class="nav-link" href="Mens.aspx">Mens</a>
+                    </li>
+                  <li class="nav-item active navbar-nav1">
+                        <a class="nav-link" href="Womens.aspx">Women</a>
+                    </li>
+                    <li class="nav-item active navbar-nav1">
+                        <a class="nav-link" href="ContactUs">ContactUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text" name="search" style="padding-top:2%" class="search" placeholder="Search" />
+                    </li>
+                  
+                    
+                    <asp:ImageButton ID="ImageButton2"  style="margin-left:auto; margin-right:0;" runat="server" ImageUrl="~/images/admin-icon.png" PostBackUrl="~/Management"  Width="4%" Height="4%"/>
+                    <asp:ImageButton ID="ImageButton1" style="float:right;" runat="server" ImageUrl="~/images/Book_Shop_Category-10-512.png" PostBackUrl="~/Cart.aspx"  Width="5%" Height="5%"/>
+                          
+               </ul>
+      
+                </div>
+                    
+     
+             </nav>
+            
+
+    </header>
+
+    <main>
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+    </main>
+      <footer class="">
+        <p>
+            <asp:Label ID="Label1" runat="server" Text="HIREN BHATIYA" ForeColor="#669999"></asp:Label><br />
+            To contact us, call us at 800-555-0400 or email us at
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="mailto:FashionHub@FasionHub.com">FashionHub@FashionHub.com</asp:HyperLink>
+        </p>
+    </footer>
+   
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
